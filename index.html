@@ -4,33 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bulb Toggler</title>
-    <style>
-        .container{
-            height: 600px;
-            width: 600px;
-            border: solid black 8px;
-            margin: 150px auto;
-        }
-        #bulb{
-            height: 250px;
-            width: 250px;
-            margin: 50px 180px;
-        }
-        #heading{
-            text-align: center;
-        }
-        .btn{
-            display: inline;
-            justify-content: space-between;
-            margin-left: 150px;
-            font-size: 20px;
-            height: 50px;
-            width: 90px;
-            border: solid 2px black;
-            border-radius: 25px;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="Stylesheet" href="style.css"/>
 </head>
 <body>
     <div class="container">
@@ -41,8 +15,8 @@
     </div>
     <script>
         const imgbulb = document.getElementById('bulb');
-        const click_btn = document. getElementById('button_on');
-        const click_btn_2 = document . getElementById('button_off');
+        const click_btn = document.getElementById('button_on');
+        const click_btn_2 = document.getElementById('button_off');
         function on(){
             imgbulb.src = 'bulb_on.png';
             click_btn.style.background = '#ffff1a';
