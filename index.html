@@ -7,8 +7,8 @@
     <link rel="Stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="container">
-        <h1 id="heading">Bulb Toggler</h1>
+    <div class="container" id="container">
+        <h1 id="heading" id="heading">Bulb Toggler</h1>
         <img src="bulb_off.png" alt="bulb" id="bulb"/>
         <button class="btn" onclick="off()" id="button_off">OFF</button>
         <button class="btn" onclick="on()" id="button_on">ON</button>
@@ -17,12 +17,19 @@
         const imgbulb = document.getElementById('bulb');
         const click_btn = document.getElementById('button_on');
         const click_btn_2 = document.getElementById('button_off');
+        const box_back = document.getElementById('container');
+        const heading_1 = document.getElementById('heading');
         function on(){
             imgbulb.src = 'bulb_on.png';
             click_btn.style.background = '#ffff1a';
+            box_back.style.background = '#fff';
+            heading_1.style.color='#000';
         }
         function off(){
             imgbulb.src = 'bulb_off.png';
+            box_back.style.background = 'grey';
+            click_btn.style.background = 'none';
+            heading_1.style.color = '#fff';
         }
     </script>
 </body>
